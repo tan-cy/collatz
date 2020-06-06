@@ -22,7 +22,7 @@ if __name__ == "__main__":
     collatz_solve(sys.stdin, sys.stdout)
 
 """ #pragma: no cover
-% cat RunCollatz.in
+$ cat RunCollatz.in
 1 10
 100 200
 201 210
@@ -30,13 +30,9 @@ if __name__ == "__main__":
 
 
 
-% python RunCollatz.py < RunCollatz.in > RunCollatz.out
-(on Windows PowerShell, the command is as follows:
-"c:\> Get-Content RunCollatz.in | py RunCollatz.py > RunCollatz.out"
-)
+$ python RunCollatz.py < RunCollatz.in > RunCollatz.out
 
-
-% cat RunCollatz.out
+$ cat RunCollatz.out
 1 10 1
 100 200 1
 201 210 1
@@ -44,9 +40,6 @@ if __name__ == "__main__":
 
 
 
-% pydoc3 -w Collatz
-(Note: on Windows PowerShell, the command is as follows:
-"c:\> python -m pydoc -w Collatz"
-)
+$ python -m pydoc -w Collatz"
 # That creates the file Collatz.html
 """

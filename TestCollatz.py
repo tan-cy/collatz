@@ -81,21 +81,21 @@ if __name__ == "__main__":
     main()
 
 """ #pragma: no cover
-% coverage run --branch TestCollatz.py >  TestCollatz.out 2>&1
+$ coverage run --branch TestCollatz.py >  TestCollatz.out 2>&1
 
 
-% cat TestCollatz.out
+$ cat TestCollatz.out
 .......
 ----------------------------------------------------------------------
 Ran 7 tests in 0.000s
 OK
 
 
-% coverage report -m                   >> TestCollatz.out
+$ coverage report -m                   >> TestCollatz.out
 
 
 
-% cat TestCollatz.out
+$ cat TestCollatz.out
 .......
 ----------------------------------------------------------------------
 Ran 7 tests in 0.000s
