@@ -33,6 +33,8 @@ def collatz_eval(i, j):
     """
     # <your code>
     l = []
+    if i > j:
+        i, j = j, i
     for x in range(i, j+1):
         s, count = x, 1
         if s>0:
