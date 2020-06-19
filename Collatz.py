@@ -20,6 +20,25 @@ def collatz_read(s):
     a = s.split()
     return [int(a[0]), int(a[1])]
 
+
+# -------------------
+# collatz_eval_helper
+# -------------------
+
+def collatz_eval_helper(s):
+    count = 1
+    if s>0:
+        while s != 1:
+            if s%2 == 0:
+                s = s//2
+            else:
+                s = 3*s+1
+            count+=1
+    else:
+        count = 0
+    return count
+
+
 # ------------
 # collatz_eval
 # ------------
@@ -36,17 +55,7 @@ def collatz_eval(i, j):
     if i > j:
         i, j = j, i
     for x in range(i, j+1):
-        s, count = x, 1
-        if s>0:
-            while s != 1:
-                if s%2 == 0:
-                    s = s//2
-                else:
-                    s = 3*s+1
-                count+=1
-        else:
-            count = 0
-        l.append(count)
+        l.append(collatz_eval_helper(x))
     return max(l)
 
 # -------------
