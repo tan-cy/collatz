@@ -34,9 +34,8 @@ def collatz_eval(i, j):
     # <your code>
     l = []
     for x in range(i, j+1):
-        s = x
+        s, count = x, 1
         if s>0:
-            count = 1
             while s != 1:
                 if s%2 == 0:
                     s = s//2
