@@ -1,3 +1,27 @@
+commit f248ff00cd860dc8faaad4d8ed35d678a56f3cc1
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:14:46 2020 -0500
+
+    fixed issue where collatz value of 1 updates after certain inputs
+
+commit 018198f0850f7ad01ebb6fbd8abca9f4161f2c21
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:11:24 2020 -0500
+
+    added unit tests for helper function
+
+commit ffb73aa13fd315a0b82d6337201b3984db5be3bb
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 20:53:07 2020 -0500
+
+    implemented simplest optimization
+
+commit 315ef98c66b40bce26db2f4b0ba8d48a5fc5d8a8
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 20:23:08 2020 -0500
+
+    added acceptance tests
+
 commit bbb8c6643bac2386e442f96b1c1b18e0b7df393e
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Fri Jun 19 01:31:32 2020 -0500

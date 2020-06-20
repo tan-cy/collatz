@@ -135,9 +135,7 @@ def collatz_eval_helper(s):
     count = 1
     x = s
     if s>0:
-        print(s)
         if s in cache:
-            print("s:",s, "cache:",cache[s])
             return cache[s]
         else:
             while s != 1:
@@ -146,7 +144,6 @@ def collatz_eval_helper(s):
                 else:
                     s = 3*s+1
                 count+=1
-            print("x:",s, "count:",count)
             cache.update({x:count})
             return count
     else:
@@ -202,11 +199,3 @@ def collatz_solve(r, w):
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
         
-r = StringIO("1 10\n100 200\n201 210\n900 1000\n")
-w = StringIO()
-collatz_solve(r, w)
-print(w.getvalue())
-print(collatz_eval(1,1))
-print(collatz_eval_helper(9999))
-print(collatz_eval_helper(0))
-print(collatz_eval_helper(1))
