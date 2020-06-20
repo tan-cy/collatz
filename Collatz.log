@@ -1,3 +1,9 @@
+commit 7dd53ee8a30cfa39cdcf72f2fe669864db19768b
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:23:56 2020 -0500
+
+    make test success log
+
 commit a9835151501fcf591556ac6716fd47c314bb11b5
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Sat Jun 20 14:16:58 2020 -0500
