@@ -1,3 +1,9 @@
+commit a9835151501fcf591556ac6716fd47c314bb11b5
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:16:58 2020 -0500
+
+    added acceptance test, removed print lines in collatz.py
+
 commit f248ff00cd860dc8faaad4d8ed35d678a56f3cc1
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Sat Jun 20 14:14:46 2020 -0500
