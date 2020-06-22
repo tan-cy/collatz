@@ -1,3 +1,15 @@
+commit 90ad7b80aec857d35de8f2de44b3752bbeffb7ea
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:36:22 2020 -0500
+
+    updated testcollatz.out
+
+commit f5ea2268343b23f6e8af822a464318aa1097ea17
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:29:22 2020 -0500
+
+    updated runcollatz.out to match runcollatz.in
+
 commit 7dd53ee8a30cfa39cdcf72f2fe669864db19768b
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Sat Jun 20 14:23:56 2020 -0500
