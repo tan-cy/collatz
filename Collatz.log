@@ -1,3 +1,93 @@
+commit 90ad7b80aec857d35de8f2de44b3752bbeffb7ea
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:36:22 2020 -0500
+
+    updated testcollatz.out
+
+commit f5ea2268343b23f6e8af822a464318aa1097ea17
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:29:22 2020 -0500
+
+    updated runcollatz.out to match runcollatz.in
+
+commit 7dd53ee8a30cfa39cdcf72f2fe669864db19768b
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:23:56 2020 -0500
+
+    make test success log
+
+commit a9835151501fcf591556ac6716fd47c314bb11b5
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:16:58 2020 -0500
+
+    added acceptance test, removed print lines in collatz.py
+
+commit f248ff00cd860dc8faaad4d8ed35d678a56f3cc1
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:14:46 2020 -0500
+
+    fixed issue where collatz value of 1 updates after certain inputs
+
+commit 018198f0850f7ad01ebb6fbd8abca9f4161f2c21
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Sat Jun 20 14:11:24 2020 -0500
+
+    added unit tests for helper function
+
+commit ffb73aa13fd315a0b82d6337201b3984db5be3bb
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 20:53:07 2020 -0500
+
+    implemented simplest optimization
+
+commit 315ef98c66b40bce26db2f4b0ba8d48a5fc5d8a8
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 20:23:08 2020 -0500
+
+    added acceptance tests
+
+commit bbb8c6643bac2386e442f96b1c1b18e0b7df393e
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:31:32 2020 -0500
+
+    added collatz_eval_helper function
+
+commit 8fbb4885966ee128a936e100b1edde4f7cd27eb0
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:26:37 2020 -0500
+
+    collatz_eval now considers when i > j
+
+commit 17dcd06b86d59a5f0511cb7371af44b3053d341e
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:25:28 2020 -0500
+
+    fixed collatz_eval to return valid max cycle length
+
+commit 6cfedbc5c7210ff01ab981122daeb02d66f8f8e3
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:22:51 2020 -0500
+
+    implemented collatz_eval
+
+commit 7d702f9892b2a188c340ac38a9d6c697c3b5851d
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:16:03 2020 -0500
+
+    added unit tests for each function
+
+commit f75d137aa522d8d4424189d98abfd7b1e114b629
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Fri Jun 19 01:13:50 2020 -0500
+
+    fixed given unit tests
+
+commit d28ec686b65fa00601f98918517a9d33346cf203
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 16 16:41:46 2020 -0500
+
+    third commit
+
 commit 45a3cbe33c6dfe7a910e989af9ed781ec5abbe33
 Author: Fares Fraij <fares@utexas.edu>
 Date:   Sat Jun 6 10:35:45 2020 -0500
