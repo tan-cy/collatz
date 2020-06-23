@@ -24,7 +24,12 @@
 <td width="100%"><dl><dt><a name="-collatz_eval"><strong>collatz_eval</strong></a>(i, j)</dt><dd><tt>i&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
 j&nbsp;the&nbsp;end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
 return&nbsp;the&nbsp;max&nbsp;cycle&nbsp;length&nbsp;of&nbsp;the&nbsp;range&nbsp;[i,&nbsp;j]</tt></dd></dl>
- <dl><dt><a name="-collatz_eval_helper"><strong>collatz_eval_helper</strong></a>(s)</dt></dl>
+ <dl><dt><a name="-collatz_eval_helper"><strong>collatz_eval_helper</strong></a>(s)</dt><dd><tt>s&nbsp;is&nbsp;an&nbsp;integer<br>
+returns&nbsp;cycle&nbsp;length&nbsp;of&nbsp;s</tt></dd></dl>
+ <dl><dt><a name="-collatz_interval"><strong>collatz_interval</strong></a>(i, j)</dt><dd><tt>i&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
+j&nbsp;the&nbsp;end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
+updates&nbsp;interval_cache&nbsp;after&nbsp;finding&nbsp;max&nbsp;cycle&nbsp;length&nbsp;of&nbsp;1000&nbsp;integers<br>
+return&nbsp;the&nbsp;max&nbsp;cycle&nbsp;length&nbsp;of&nbsp;the&nbsp;range&nbsp;[i,&nbsp;j]</tt></dd></dl>
  <dl><dt><a name="-collatz_print"><strong>collatz_print</strong></a>(w, i, j, v)</dt><dd><tt>print&nbsp;three&nbsp;ints<br>
 w&nbsp;a&nbsp;writer<br>
 i&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
@@ -42,5 +47,6 @@ w&nbsp;a&nbsp;writer</tt></dd></dl>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>cache</strong> = {1: 1, 2: 2, 3: 8, 4: 3, 5: 6, 6: 9, 7: 17, 8: 4, 9: 20, 10: 7, ...}</td></tr></table>
+<td width="100%"><strong>cache</strong> = {1: 1, 2: 2, 3: 8, 4: 3, 5: 6, 6: 9, 7: 17, 8: 4, 9: 20, 10: 7, ...}<br>
+<strong>interval_cache</strong> = {1: 179, 1001: 182, 2001: 217, 3001: 238, 4001: 215, 5001: 236, 6001: 262, 7001: 252, 8001: 247, 9001: 260}</td></tr></table>
 </body></html>

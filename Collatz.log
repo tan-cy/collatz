@@ -1,3 +1,39 @@
+commit 59d565542e70bf84b5ad4e2077b813ae344788fb
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 16:36:12 2020 -0500
+
+    fixed issue where certain cases don't get a correct output
+
+commit 3e7ea4a59e0ebbc456c63988ea6099309e3a209f
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 15:14:16 2020 -0500
+
+    clarified cache lists
+
+commit e62d8119ce6a86973038af79d1b0377188214814
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 15:08:06 2020 -0500
+
+    updated Collatz.py with sphere solution
+
+commit 22ee4fbb5d5d01de53c707774c634b65800fb7b5
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 14:40:29 2020 -0500
+
+    added documentation of methods
+
+commit aaf5d11ffbe79ffbcb5a591cc29c36a07edb989d
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 14:29:52 2020 -0500
+
+    added sphere solution
+
+commit af5f54dfd74c46d9681358e53e57ffa8086a0d05
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Mon Jun 22 10:09:18 2020 -0500
+
+    modified unit tests and acceptance tests
+
 commit 90ad7b80aec857d35de8f2de44b3752bbeffb7ea
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Sat Jun 20 14:36:22 2020 -0500
