@@ -94,7 +94,7 @@ class TestCollatz (TestCase):
     def test_eval_6(self):
         v = collatz_eval(1, 1)
         self.assertEqual(v, 1)
-    
+
     def test_eval_7(self):
         v = collatz_eval(5, 6)
         self.assertEqual(v, 9)
@@ -140,7 +140,6 @@ class TestCollatz (TestCase):
         collatz_solve(r, w)
         self.assertEqual(
             w.getvalue(), "20 30 112\n1 53 112\n86 90 31\n580 689 145\n40 234 128\n")
-
 
     def test_solve_3(self):
         r = StringIO("1 1\n")

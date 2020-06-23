@@ -1,3 +1,15 @@
+commit 59d565542e70bf84b5ad4e2077b813ae344788fb
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 16:36:12 2020 -0500
+
+    fixed issue where certain cases don't get a correct output
+
+commit 3e7ea4a59e0ebbc456c63988ea6099309e3a209f
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 15:14:16 2020 -0500
+
+    clarified cache lists
+
 commit e62d8119ce6a86973038af79d1b0377188214814
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Tue Jun 23 15:08:06 2020 -0500

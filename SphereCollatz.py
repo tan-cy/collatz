@@ -165,7 +165,6 @@ def collatz_eval_helper(s):
         count += 1
     cache.update({x: count})
     return count
-    
 
 
 def collatz_interval(i, j):
@@ -200,9 +199,9 @@ def collatz_eval(i, j):
         l.append(collatz_eval_helper(i))
     elif i > j:
         i, j = j, i
-   
+
     while i <= j:
-        if i > 1 and i % 1000 == 1 and j>= i+999:
+        if i > 1 and i % 1000 == 1 and j >= i+999:
             if i in interval_cache:
                 l.append(interval_cache[i])
             else:
@@ -246,6 +245,7 @@ def collatz_solve(r, w):
         i, j = collatz_read(s)
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
 
 if __name__ == "__main__":
     collatz_solve(sys.stdin, sys.stdout)
