@@ -133,6 +133,10 @@ def collatz_read(s):
 # -------------------
 
 def collatz_eval_helper(s):
+    """
+    s is an integer
+    returns cycle length of s
+    """
     count = 0
     x = s
     if s == 1:

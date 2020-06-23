@@ -138,6 +138,10 @@ def collatz_read(s):
 # -------------------
 
 def collatz_eval_helper(s):
+    """
+    s is an integer
+    returns cycle length of s
+    """
     count = 0
     x = s
     if s == 1:
@@ -158,6 +162,12 @@ def collatz_eval_helper(s):
         return count
 
 def collatz_interval(i,j):
+    """
+    i the beginning of the range, inclusive
+    j the end       of the range, inclusive
+    updates interval_cache after finding max cycle length of 1000 integers
+    return the max cycle length of the range [i, j]
+    """
     l = []
     for x in range(i, j+1):
         l.append(collatz_eval_helper(x))
