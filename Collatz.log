@@ -1,3 +1,9 @@
+commit af5f54dfd74c46d9681358e53e57ffa8086a0d05
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Mon Jun 22 10:09:18 2020 -0500
+
+    modified unit tests and acceptance tests
+
 commit 90ad7b80aec857d35de8f2de44b3752bbeffb7ea
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Sat Jun 20 14:36:22 2020 -0500

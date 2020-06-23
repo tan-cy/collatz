@@ -6,6 +6,7 @@
 # Glenn P. Downing
 # ---------------------------
 from io import StringIO
+import sys
 # ---------------------------------
 # cache of collatz values 1 to 1000
 # ---------------------------------
@@ -111,6 +112,8 @@ cache = {1: 1, 2: 2, 3: 8, 4: 3, 5: 6, 6: 9, 7: 17, 8: 4, 9: 20, 10: 7,
         981: 24, 982: 143, 983: 143, 984: 50, 985: 24, 986: 50, 987: 37, 988: 50, 989: 50, 990: 99,
         991: 99, 992: 112, 993: 94, 994: 24, 995: 24, 996: 50, 997: 50, 998: 50, 999: 50, 1000: 112}
 
+interval_cache = {1:179, 1001:182, 2001:217, 3001:238, 4001:215, 5001:236, 6001:262, 7001:252, 8001:247, 9001:260}
+
 
 # ------------
 # collatz_read
@@ -124,8 +127,10 @@ def collatz_read(s):
     return a list of two ints, representing the beginning and end of a range, [i, j]
     """
     a = s.split()
-    return [int(a[0]), int(a[1])]
-
+    try:
+        return [int(a[0]), int(a[1])]
+    except:
+        sys.exit()
 
 
 # -------------------
@@ -152,6 +157,12 @@ def collatz_eval_helper(s):
     else:
         return count
 
+def collatz_interval(i,j):
+    l = []
+    for x in range(i, j+1):
+        l.append(collatz_eval_helper(x))
+    interval_cache.update({i:max(l)})
+    return max(l)
 
 # ------------
 # collatz_eval
@@ -166,12 +177,25 @@ def collatz_eval(i, j):
     """
     # <your code>
     assert 0 <= i < 1000000
-    assert 0 <= j < 1000000
+    assert 0 <= j < 1000000 
     l = []
     if i > j:
         i, j = j, i
-    for x in range(i, j+1):
-        l.append(collatz_eval_helper(x))
+    if i == j:
+        l.append(collatz_eval_helper(i))
+    while i < j:
+        if i > 1 and i%1000 == 1: 
+            if i in interval_cache and j >= i+999:
+                l.append(interval_cache[i])
+            elif j > i+999:
+                l.append(collatz_interval(i,i+999))    
+            i = i + 1000
+        elif i == 1 and j>= i+999:
+            l.append(interval_cache[i])
+            i = i+1000
+        else:
+            l.append(collatz_eval_helper(i))
+            i+=1
     assert max(l) >= 0
     return max(l)
 
@@ -205,3 +229,29 @@ def collatz_solve(r, w):
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
         
+
+if __name__ == "__main__":
+    collatz_solve(sys.stdin, sys.stdout)
+
+""" #pragma: no cover
+$ cat RunCollatz.in
+1 10
+100 200
+201 210
+900 1000
+
+
+
+$ python RunCollatz.py < RunCollatz.in > RunCollatz.out
+
+$ cat RunCollatz.out
+1 10 1
+100 200 1
+201 210 1
+900 1000 1
+
+
+
+$ python -m pydoc -w Collatz"
+# That creates the file Collatz.html
+"""
