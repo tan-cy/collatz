@@ -119,7 +119,6 @@ cache = {1: 1, 2: 2, 3: 8, 4: 3, 5: 6, 6: 9, 7: 17, 8: 4, 9: 20, 10: 7,
 # cache of collatz values 1 to 10000 in intervals of 1000
 # key represents first number of the interval
 # -------------------------------------------------------
-
 interval_cache = {1: 179, 1001: 182, 2001: 217, 3001: 238,
                   4001: 215, 5001: 236, 6001: 262, 7001: 252, 8001: 247, 9001: 260}
 
@@ -155,20 +154,18 @@ def collatz_eval_helper(s):
     x = s
     if s == 1:
         return 1
-    elif s > 0:
-        while s != 1:
-            if s in cache:
-                cache.update({x: count+cache[s]})
-                return cache[s]+count
-            elif s % 2 == 0:
-                s = s//2
-            else:
-                s = 3*s+1
-            count += 1
-        cache.update({x: count})
-        return count
-    else:
-        return count
+    while s > 1:
+        if s in cache:
+            cache.update({x: count+cache[s]})
+            return cache[s]+count
+        elif s % 2 == 0:
+            s = s//2
+        else:
+            s = 3*s+1
+        count += 1
+    cache.update({x: count})
+    return count
+    
 
 
 def collatz_interval(i, j):
@@ -196,18 +193,19 @@ def collatz_eval(i, j):
     return the max cycle length of the range [i, j]
     """
     # <your code>
-    assert 0 <= i < 1000000
-    assert 0 <= j < 1000000
+    assert 0 < i < 1000000
+    assert 0 < j < 1000000
     l = []
-    if i > j:
-        i, j = j, i
     if i == j:
         l.append(collatz_eval_helper(i))
-    while i < j:
-        if i > 1 and i % 1000 == 1:
-            if i in interval_cache and j >= i+999:
+    elif i > j:
+        i, j = j, i
+   
+    while i <= j:
+        if i > 1 and i % 1000 == 1 and j>= i+999:
+            if i in interval_cache:
                 l.append(interval_cache[i])
-            elif j > i+999:
+            else:
                 l.append(collatz_interval(i, i+999))
             i = i + 1000
         elif i == 1 and j >= i+999:
@@ -216,7 +214,7 @@ def collatz_eval(i, j):
         else:
             l.append(collatz_eval_helper(i))
             i += 1
-    assert max(l) >= 0
+    assert max(l) > 0
     return max(l)
 
 # -------------
@@ -248,7 +246,6 @@ def collatz_solve(r, w):
         i, j = collatz_read(s)
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
-
 
 if __name__ == "__main__":
     collatz_solve(sys.stdin, sys.stdout)
