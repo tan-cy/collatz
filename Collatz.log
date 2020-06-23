@@ -1,3 +1,9 @@
+commit e62d8119ce6a86973038af79d1b0377188214814
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 15:08:06 2020 -0500
+
+    updated Collatz.py with sphere solution
+
 commit 22ee4fbb5d5d01de53c707774c634b65800fb7b5
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Tue Jun 23 14:40:29 2020 -0500
