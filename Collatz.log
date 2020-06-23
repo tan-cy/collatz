@@ -1,3 +1,15 @@
+commit 22ee4fbb5d5d01de53c707774c634b65800fb7b5
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 14:40:29 2020 -0500
+
+    added documentation of methods
+
+commit aaf5d11ffbe79ffbcb5a591cc29c36a07edb989d
+Author: Cindy Tan <ctan@utexas.edu>
+Date:   Tue Jun 23 14:29:52 2020 -0500
+
+    added sphere solution
+
 commit af5f54dfd74c46d9681358e53e57ffa8086a0d05
 Author: Cindy Tan <ctan@utexas.edu>
 Date:   Mon Jun 22 10:09:18 2020 -0500
